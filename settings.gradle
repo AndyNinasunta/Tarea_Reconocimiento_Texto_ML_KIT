@@ -1,0 +1,2 @@
+rootProject.name = "Tarea_Reconocimiento_Texto_ML_KIT"
+include ':app'

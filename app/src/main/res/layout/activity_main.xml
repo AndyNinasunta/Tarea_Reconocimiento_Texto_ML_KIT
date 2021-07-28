@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Reconocimiento de Texto"
+        android:textColor="#00BCD4"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+
+        <ImageView
+            android:id="@+id/imgVista"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/txtTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnAgregarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgVista"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="escogerImagen"
+            android:text="Seleccione una Imagen"
+            app:backgroundTint="#2196F3" />
+
+    <TextView
+        android:id="@+id/txtTextoObtenido"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btnAgregarImagen"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/redondear_background"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="8sp"
+        android:scrollbars="vertical"
+        android:text="Aqí se mostrara el texto Obtenido...."
+        android:textAllCaps="false"
+        android:textColor="#558F97"
+        android:textSize="25sp" />
+
+    <Button
+            android:id="@+id/btnReconocerTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTextoObtenido"
+            android:layout_marginTop="10dp"
+            android:onClick="reconocerTexto"
+            android:text="Reconocer Texto"
+            app:backgroundTint="#2196F3" />
+
+</RelativeLayout>
